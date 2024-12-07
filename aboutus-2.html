@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us 1 | Alverse</title>
+
+  <!-- custom css  -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/animate.css">
+
+
+  <style>
+       /* 初始页面背景色 */
+       body {
+      transition: background-color 2s ease;
+      /* 背景色变化过渡 */
+    }
+    .text {
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      opacity: 0;
+      /* 初始状态为透明 */
+      animation: fadeIn 3s forwards;
+      /* 动画效果，持续3秒 */
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        /* 动画开始时完全透明 */
+      }
+
+      100% {
+        opacity: 1;
+        /* 动画结束时完全不透明 */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- main Body  -->
+
+  <!-- back to top  -->
+  <!-- <button class="back-to-top" id="back-to-top"></button> -->
+
+  <!-- pre loader  -->
+  <!-- <div id="preloader">
+    <div id="loader-img">
+        <div id="loader"></div>
+    </div>
+</div> -->
+
+ 
+  <section class="hero bg__secondary__1 py__80 mb__n1 wow fadeInDown" style="height: 250px;background-image: url('./static/image/20241203215443.png');background-size: 100% 100%;
+  background-repeat: no-repeat;">
+    <div class="container position-relative">
+      <div class="position-relative">
+        <div class="ball_img_3 d-none d-lg-block rotate">
+          <img src="static/picture/ball.png" alt="ball">
+        </div>
+
+        <div class="robot__img d-none d-lg-block">
+          <!-- <div class="robot__circle rotat">
+            <img src="static/picture/robot_circle.png" alt="robot_circle">
+          </div> -->
+          <div class="robot__body jumping_2">
+            <img src="static/image/20241203215323.png" style="width: 130px;height: 130px;" alt="robot_body">
+          </div>
+          <!-- <div class="robot__base jumping_1">
+            <img src="static/picture/robot_base.png" alt="robot_base">
+          </div> -->
+        </div>
+      </div>
+      <div class="mx-auto wow fadeInDown">
+        <h2 class="fs__64 text-white fw-bolder text-center mb-3" style="font-size: 50px;">Times Square: Anger in the Chaos
+        </h2>
+      </div>
+      <nav aria-label="breadcrumb">
+        <!-- <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-white fs__20 text-capitalize">Home</a>
+          </li>
+          <li class="breadcrumb-item text-white fs__20  text-capitalize text-decoration-underline " aria-current="page">
+            About us
+          </li>
+        </ol> -->
+      </nav>
+    </div>
+  </section>
+  <!-- Hero end  -->
+
+  <!-- about us start  -->
+  <section class="about__us py__120" style="position: relative;">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-6">
+          <!-- <span class="d-block fs__24 heading__font fw-semibold primary__1 mb-3">About Us</span> -->
+          <!-- <h2 class="fs__40 fw-bold secondary__1 mb-4">
+            Answer First Revolutionizing internet Accessibility.
+          </h2> -->
+          <p class="fs__16 secondary__3 mb__32 jumping_1" style="font-size: 23px;text-indent: 2em; ">
+            Times Square, the so-called "Crossroads of the World," can be overwhelming. The crushing crowds, 
+            the lingering stench of garbage, and the unexpected outbursts of strangers shouting into the void—it's enough to ignite a spark of anger in anyone.
+
+          Here, anger feels justified. It's a reaction to the lack of space, the noise that never fades, and the chaos that refuses to slow down. 
+          Yet, amidst this frustration, Times Square is a reminder 
+          of the raw, unfiltered energy of city life—intense, unpredictable, and, at times, infuriating.
+          </p>
+         <div style="height: 100px;"></div>
+          <audio src="static/audio/187959.mp3" controls autoplay></audio>
+        </div>
+        <div class="col-lg-5">
+          <div class="banner__img">
+            <a href="https://www.timessquarenyc.org/">
+              <img class="w-100 jumping_1" src="static/image/20241203214829.jpg" alt="banner"
+                style="border-radius:50% ;width: 300px !important;height: 300px;margin-left: 100px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="static/image/20241203215159.jpg" class="animated bounce  jumping_2" onclick="changeBackgroundColor('red')"   style="position: absolute;bottom: 200px;right: 100px;width: 100px;height: 100px;">
+  </section>
+
+
+  <!-- about us end  -->
+
+ 
+
+  <!-- js script start -->
+  <!-- jquery -->
+  <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+  <script src="static/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <!-- bootstrap  -->
+  <script src="static/js/bootstrap.min.js"></script>
+  <!-- swiper slider cdn  -->
+  <script src="static/js/swiper-bundle.min.js"></script>
+  <!-- wow js  -->
+  <script src="static/js/wow.min.js"></script>
+  <!-- viewport -->
+  <script src="static/js/viewport.js"></script>
+  <!-- Odometer js -->
+  <script src="static/js/odometer.js_0.4.7_odometer.min.js"></script>
+
+  <!-- plugin customization js  -->
+  <script src="static/js/plugingCustomize.js"></script>
+  <!-- custom js  -->
+  <script src="static/js/main.js"></script>
+  <script>
+        // 函数改变背景色
+        function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+  </script>
+</body>
+
+</html>
